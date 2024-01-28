@@ -11,6 +11,7 @@
 		75C375892B66507900E5ABF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C375882B66507900E5ABF1 /* ContentView.swift */; };
 		75C3758B2B66507B00E5ABF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C3758A2B66507B00E5ABF1 /* Assets.xcassets */; };
 		75C3758E2B66507B00E5ABF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C3758D2B66507B00E5ABF1 /* Preview Assets.xcassets */; };
+		75C3759D2B6661AD00E5ABF1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3759C2B6661AD00E5ABF1 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		75C375882B66507900E5ABF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75C3758A2B66507B00E5ABF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75C3758D2B66507B00E5ABF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75C3759C2B6661AD00E5ABF1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +53,11 @@
 		75C375852B66507900E5ABF1 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
-				75C375982B66602400E5ABF1 /* Utils */,
-				75C375972B66601E00E5ABF1 /* Services */,
-				75C375962B66601600E5ABF1 /* Extensions */,
-				75C375952B66601000E5ABF1 /* Core */,
 				75C375942B66600A00E5ABF1 /* App */,
-				75C375882B66507900E5ABF1 /* ContentView.swift */,
+				75C375952B66601000E5ABF1 /* Core */,
+				75C375962B66601600E5ABF1 /* Extensions */,
+				75DB6B352B6683CD0076F1DA /* Model */,
+				75C375972B66601E00E5ABF1 /* Services */,
 				75C3758A2B66507B00E5ABF1 /* Assets.xcassets */,
 				75C3758C2B66507B00E5ABF1 /* Preview Content */,
 			);
@@ -82,8 +83,8 @@
 		75C375952B66601000E5ABF1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				75C3759A2B66607D00E5ABF1 /* Root */,
 				75C375992B66603800E5ABF1 /* Authentication */,
+				75C3759A2B66607D00E5ABF1 /* Root */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -98,6 +99,7 @@
 		75C375972B66601E00E5ABF1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				75C375982B66602400E5ABF1 /* Utils */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -112,6 +114,7 @@
 		75C375992B66603800E5ABF1 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				75C3759B2B66619900E5ABF1 /* Views */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -119,8 +122,24 @@
 		75C3759A2B66607D00E5ABF1 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				75C375882B66507900E5ABF1 /* ContentView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		75C3759B2B66619900E5ABF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75C3759C2B6661AD00E5ABF1 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		75DB6B352B6683CD0076F1DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C3759D2B6661AD00E5ABF1 /* LoginView.swift in Sources */,
 				75C375892B66507900E5ABF1 /* ContentView.swift in Sources */,
 				75C375872B66507900E5ABF1 /* ThreadsApp.swift in Sources */,
 			);
@@ -344,6 +364,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ziterz.Threads;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,6 +396,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ziterz.Threads;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
