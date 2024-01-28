@@ -14,6 +14,12 @@
 		75C3759D2B6661AD00E5ABF1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3759C2B6661AD00E5ABF1 /* LoginView.swift */; };
 		75DB6B382B6689380076F1DA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B372B6689380076F1DA /* RegistrationView.swift */; };
 		75DB6B3B2B668A970076F1DA /* ThreadsViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B3A2B668A970076F1DA /* ThreadsViewModifier.swift */; };
+		75DB6B3E2B668C9B0076F1DA /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B3D2B668C9B0076F1DA /* ThreadsTabView.swift */; };
+		75DB6B422B668E090076F1DA /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B412B668E090076F1DA /* FeedView.swift */; };
+		75DB6B462B6690350076F1DA /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B452B6690350076F1DA /* ExploreView.swift */; };
+		75DB6B4A2B66907C0076F1DA /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B492B66907C0076F1DA /* CreateThreadView.swift */; };
+		75DB6B4E2B66909A0076F1DA /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B4D2B66909A0076F1DA /* ActivityView.swift */; };
+		75DB6B522B6690B10076F1DA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B512B6690B10076F1DA /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		75C3759C2B6661AD00E5ABF1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		75DB6B372B6689380076F1DA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		75DB6B3A2B668A970076F1DA /* ThreadsViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsViewModifier.swift; sourceTree = "<group>"; };
+		75DB6B3D2B668C9B0076F1DA /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
+		75DB6B412B668E090076F1DA /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		75DB6B452B6690350076F1DA /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		75DB6B492B66907C0076F1DA /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
+		75DB6B4D2B66909A0076F1DA /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		75DB6B512B6690B10076F1DA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +100,14 @@
 		75C375952B66601000E5ABF1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				75DB6B4B2B66908F0076F1DA /* Activity */,
 				75C375992B66603800E5ABF1 /* Authentication */,
+				75DB6B432B668E2E0076F1DA /* Explore */,
+				75DB6B3F2B668DFB0076F1DA /* Feed */,
+				75DB6B4F2B6690A70076F1DA /* Profile */,
 				75C3759A2B66607D00E5ABF1 /* Root */,
+				75DB6B3C2B668C6E0076F1DA /* TabBar */,
+				75DB6B472B66906C0076F1DA /* ThreadCreation */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -154,6 +172,94 @@
 				75DB6B3A2B668A970076F1DA /* ThreadsViewModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		75DB6B3C2B668C6E0076F1DA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B3D2B668C9B0076F1DA /* ThreadsTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		75DB6B3F2B668DFB0076F1DA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B402B668E000076F1DA /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		75DB6B402B668E000076F1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B412B668E090076F1DA /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75DB6B432B668E2E0076F1DA /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B442B66902D0076F1DA /* View */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		75DB6B442B66902D0076F1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B452B6690350076F1DA /* ExploreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75DB6B472B66906C0076F1DA /* ThreadCreation */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B482B6690720076F1DA /* View */,
+			);
+			path = ThreadCreation;
+			sourceTree = "<group>";
+		};
+		75DB6B482B6690720076F1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B492B66907C0076F1DA /* CreateThreadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75DB6B4B2B66908F0076F1DA /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B4C2B6690930076F1DA /* View */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		75DB6B4C2B6690930076F1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B4D2B66909A0076F1DA /* ActivityView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75DB6B4F2B6690A70076F1DA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B502B6690AA0076F1DA /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		75DB6B502B6690AA0076F1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B512B6690B10076F1DA /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +333,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DB6B422B668E090076F1DA /* FeedView.swift in Sources */,
 				75C3759D2B6661AD00E5ABF1 /* LoginView.swift in Sources */,
 				75C375892B66507900E5ABF1 /* ContentView.swift in Sources */,
+				75DB6B4E2B66909A0076F1DA /* ActivityView.swift in Sources */,
+				75DB6B4A2B66907C0076F1DA /* CreateThreadView.swift in Sources */,
+				75DB6B3E2B668C9B0076F1DA /* ThreadsTabView.swift in Sources */,
 				75C375872B66507900E5ABF1 /* ThreadsApp.swift in Sources */,
 				75DB6B3B2B668A970076F1DA /* ThreadsViewModifier.swift in Sources */,
+				75DB6B462B6690350076F1DA /* ExploreView.swift in Sources */,
+				75DB6B522B6690B10076F1DA /* ProfileView.swift in Sources */,
 				75DB6B382B6689380076F1DA /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
