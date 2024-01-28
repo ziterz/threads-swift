@@ -14,7 +14,7 @@ struct ThreadsTextFieldModifier: ViewModifier {
       .font(.subheadline)
       .padding(12)
       .background(Color(.systemGray6))
-      .cornerRadius(10)
+      .clipShape(RoundedRectangle(cornerRadius: 10))
       .padding(.horizontal, 24)
   }
 }
@@ -27,6 +27,6 @@ struct ThreadsButtonModifier: ViewModifier {
       .foregroundStyle(Color(.white))
       .frame(width: 352, height: 44)
       .background(.black)
-      .cornerRadius(8)
+      .clipShape(RoundedRectangle(cornerRadius: 10))
   }
 }

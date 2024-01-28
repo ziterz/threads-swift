@@ -24,6 +24,7 @@
 		75DB6B592B6698A50076F1DA /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B582B6698A50076F1DA /* CircularProfileImageView.swift */; };
 		75DB6B5B2B6699060076F1DA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B5A2B6699060076F1DA /* UserCell.swift */; };
 		75DB6B5E2B669FE50076F1DA /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B5D2B669FE50076F1DA /* ProfileThreadFilter.swift */; };
+		75DB6B642B66A7EC0076F1DA /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B632B66A7EC0076F1DA /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		75DB6B582B6698A50076F1DA /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		75DB6B5A2B6699060076F1DA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		75DB6B5D2B669FE50076F1DA /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
+		75DB6B632B66A7EC0076F1DA /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 		75DB6B4F2B6690A70076F1DA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				75DB6B5F2B66A7CE0076F1DA /* EditProfile */,
 				75DB6B5C2B669FD40076F1DA /* Model */,
 				75DB6B502B6690AA0076F1DA /* View */,
 			);
@@ -288,6 +291,22 @@
 				75DB6B5D2B669FE50076F1DA /* ProfileThreadFilter.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		75DB6B5F2B66A7CE0076F1DA /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B602B66A7D50076F1DA /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		75DB6B602B66A7D50076F1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B632B66A7EC0076F1DA /* EditProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +382,7 @@
 			files = (
 				75DB6B422B668E090076F1DA /* FeedView.swift in Sources */,
 				75C3759D2B6661AD00E5ABF1 /* LoginView.swift in Sources */,
+				75DB6B642B66A7EC0076F1DA /* EditProfileView.swift in Sources */,
 				75C375892B66507900E5ABF1 /* ContentView.swift in Sources */,
 				75DB6B542B6692000076F1DA /* ThreadCell.swift in Sources */,
 				75DB6B4E2B66909A0076F1DA /* ActivityView.swift in Sources */,

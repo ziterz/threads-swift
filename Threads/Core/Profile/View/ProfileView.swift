@@ -53,7 +53,7 @@ struct ProfileView: View {
             .foregroundStyle(Color(.white))
             .frame(width: 352, height: 32)
             .background(.black)
-            .cornerRadius(8)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
         }
         
         VStack {
