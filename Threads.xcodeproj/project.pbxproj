@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		75C375872B66507900E5ABF1 /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C375862B66507900E5ABF1 /* ThreadsApp.swift */; };
 		75C375892B66507900E5ABF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C375882B66507900E5ABF1 /* ContentView.swift */; };
-		75C3758B2B66507B00E5ABF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C3758A2B66507B00E5ABF1 /* Assets.xcassets */; };
 		75C3758E2B66507B00E5ABF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C3758D2B66507B00E5ABF1 /* Preview Assets.xcassets */; };
 		75C3759D2B6661AD00E5ABF1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3759C2B6661AD00E5ABF1 /* LoginView.swift */; };
 		75DB6B382B6689380076F1DA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B372B6689380076F1DA /* RegistrationView.swift */; };
@@ -20,13 +19,14 @@
 		75DB6B4A2B66907C0076F1DA /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B492B66907C0076F1DA /* CreateThreadView.swift */; };
 		75DB6B4E2B66909A0076F1DA /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B4D2B66909A0076F1DA /* ActivityView.swift */; };
 		75DB6B522B6690B10076F1DA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B512B6690B10076F1DA /* ProfileView.swift */; };
+		75DB6B542B6692000076F1DA /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B532B6692000076F1DA /* ThreadCell.swift */; };
+		75DB6B562B66927A0076F1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DB6B552B66927A0076F1DA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75C375832B66507900E5ABF1 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C375862B66507900E5ABF1 /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		75C375882B66507900E5ABF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		75C3758A2B66507B00E5ABF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75C3758D2B66507B00E5ABF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		75C3759C2B6661AD00E5ABF1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		75DB6B372B6689380076F1DA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -37,6 +37,8 @@
 		75DB6B492B66907C0076F1DA /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		75DB6B4D2B66909A0076F1DA /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		75DB6B512B6690B10076F1DA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		75DB6B532B6692000076F1DA /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
+		75DB6B552B66927A0076F1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,7 @@
 				75DB6B352B6683CD0076F1DA /* Model */,
 				75C375972B66601E00E5ABF1 /* Services */,
 				75C375982B66602400E5ABF1 /* Utils */,
-				75C3758A2B66507B00E5ABF1 /* Assets.xcassets */,
+				75DB6B552B66927A0076F1DA /* Assets.xcassets */,
 				75C3758C2B66507B00E5ABF1 /* Preview Content */,
 			);
 			path = Threads;
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				75DB6B412B668E090076F1DA /* FeedView.swift */,
+				75DB6B532B6692000076F1DA /* ThreadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,8 +324,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DB6B562B66927A0076F1DA /* Assets.xcassets in Resources */,
 				75C3758E2B66507B00E5ABF1 /* Preview Assets.xcassets in Resources */,
-				75C3758B2B66507B00E5ABF1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +339,7 @@
 				75DB6B422B668E090076F1DA /* FeedView.swift in Sources */,
 				75C3759D2B6661AD00E5ABF1 /* LoginView.swift in Sources */,
 				75C375892B66507900E5ABF1 /* ContentView.swift in Sources */,
+				75DB6B542B6692000076F1DA /* ThreadCell.swift in Sources */,
 				75DB6B4E2B66909A0076F1DA /* ActivityView.swift in Sources */,
 				75DB6B4A2B66907C0076F1DA /* CreateThreadView.swift in Sources */,
 				75DB6B3E2B668C9B0076F1DA /* ThreadsTabView.swift in Sources */,
