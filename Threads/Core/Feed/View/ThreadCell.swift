@@ -24,13 +24,13 @@ struct ThreadCell: View {
             
             Text("10m")
               .font(.caption)
-              .foregroundColor(Color(.systemGray3))
+              .foregroundStyle(Color(.systemGray3))
             
             Button {
               
             } label: {
               Image(systemName: "ellipsis")
-                .foregroundColor(Color(.darkGray))
+                .foregroundStyle(Color(.darkGray))
             }
           }
           
@@ -63,7 +63,7 @@ struct ThreadCell: View {
               Image(systemName: "paperplane")
             }
           }
-          .foregroundColor(.black)
+          .foregroundStyle(Color(.black))
           .padding(.vertical, 8)
         }
       }

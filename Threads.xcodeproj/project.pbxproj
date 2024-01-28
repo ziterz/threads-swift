@@ -23,6 +23,7 @@
 		75DB6B562B66927A0076F1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DB6B552B66927A0076F1DA /* Assets.xcassets */; };
 		75DB6B592B6698A50076F1DA /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B582B6698A50076F1DA /* CircularProfileImageView.swift */; };
 		75DB6B5B2B6699060076F1DA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B5A2B6699060076F1DA /* UserCell.swift */; };
+		75DB6B5E2B669FE50076F1DA /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB6B5D2B669FE50076F1DA /* ProfileThreadFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		75DB6B552B66927A0076F1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75DB6B582B6698A50076F1DA /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		75DB6B5A2B6699060076F1DA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		75DB6B5D2B669FE50076F1DA /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 		75DB6B4F2B6690A70076F1DA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				75DB6B5C2B669FD40076F1DA /* Model */,
 				75DB6B502B6690AA0076F1DA /* View */,
 			);
 			path = Profile;
@@ -277,6 +280,14 @@
 				75DB6B5A2B6699060076F1DA /* UserCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		75DB6B5C2B669FD40076F1DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75DB6B5D2B669FE50076F1DA /* ProfileThreadFilter.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +369,7 @@
 				75DB6B592B6698A50076F1DA /* CircularProfileImageView.swift in Sources */,
 				75DB6B5B2B6699060076F1DA /* UserCell.swift in Sources */,
 				75DB6B4A2B66907C0076F1DA /* CreateThreadView.swift in Sources */,
+				75DB6B5E2B669FE50076F1DA /* ProfileThreadFilter.swift in Sources */,
 				75DB6B3E2B668C9B0076F1DA /* ThreadsTabView.swift in Sources */,
 				75C375872B66507900E5ABF1 /* ThreadsApp.swift in Sources */,
 				75DB6B3B2B668A970076F1DA /* ThreadsViewModifier.swift in Sources */,

@@ -60,7 +60,7 @@ struct RegistrationView: View {
           Text("Sign In")
             .fontWeight(.semibold)
         }
-        .foregroundColor(.black)
+        .foregroundStyle(Color(.black))
         .font(.footnote)
       }
       .padding(.vertical, 16)

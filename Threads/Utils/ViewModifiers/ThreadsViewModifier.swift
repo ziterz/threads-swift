@@ -24,7 +24,7 @@ struct ThreadsButtonModifier: ViewModifier {
     content
       .font(.subheadline)
       .fontWeight(.semibold)
-      .foregroundColor(.white)
+      .foregroundStyle(Color(.white))
       .frame(width: 352, height: 44)
       .background(.black)
       .cornerRadius(8)

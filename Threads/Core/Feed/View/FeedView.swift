@@ -30,7 +30,7 @@ struct FeedView: View {
           
         } label: {
           Image(systemName: "arrow.counterclockwise")
-            .foregroundColor(.black)
+            .foregroundStyle(Color(.black))
         }
       }
     }
