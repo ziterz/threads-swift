@@ -51,7 +51,11 @@
 		75C375852B66507900E5ABF1 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
-				75C375862B66507900E5ABF1 /* ThreadsApp.swift */,
+				75C375982B66602400E5ABF1 /* Utils */,
+				75C375972B66601E00E5ABF1 /* Services */,
+				75C375962B66601600E5ABF1 /* Extensions */,
+				75C375952B66601000E5ABF1 /* Core */,
+				75C375942B66600A00E5ABF1 /* App */,
 				75C375882B66507900E5ABF1 /* ContentView.swift */,
 				75C3758A2B66507B00E5ABF1 /* Assets.xcassets */,
 				75C3758C2B66507B00E5ABF1 /* Preview Content */,
@@ -65,6 +69,58 @@
 				75C3758D2B66507B00E5ABF1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75C375942B66600A00E5ABF1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				75C375862B66507900E5ABF1 /* ThreadsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		75C375952B66601000E5ABF1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				75C3759A2B66607D00E5ABF1 /* Root */,
+				75C375992B66603800E5ABF1 /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		75C375962B66601600E5ABF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75C375972B66601E00E5ABF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		75C375982B66602400E5ABF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		75C375992B66603800E5ABF1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		75C3759A2B66607D00E5ABF1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +152,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
+				ORGANIZATIONNAME = ziterz.dev;
 				TargetAttributes = {
 					75C375822B66507900E5ABF1 = {
 						CreatedOnToolsVersion = 15.1;
