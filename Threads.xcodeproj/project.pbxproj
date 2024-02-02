@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		759560242B6D46DC00763692 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759560232B6D46DC00763692 /* ContentViewModel.swift */; };
+		759560262B6D4A0300763692 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759560252B6D4A0300763692 /* LoginViewModel.swift */; };
 		75C375872B66507900E5ABF1 /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C375862B66507900E5ABF1 /* ThreadsApp.swift */; };
 		75C375892B66507900E5ABF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C375882B66507900E5ABF1 /* ContentView.swift */; };
 		75C3758E2B66507B00E5ABF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C3758D2B66507B00E5ABF1 /* Preview Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		759560232B6D46DC00763692 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		759560252B6D4A0300763692 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		75C375832B66507900E5ABF1 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C375862B66507900E5ABF1 /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		75C375882B66507900E5ABF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		759560212B6D46C100763692 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75C375882B66507900E5ABF1 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		759560222B6D46C600763692 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				759560232B6D46DC00763692 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		75C3757A2B66507900E5ABF1 = {
 			isa = PBXGroup;
 			children = (
@@ -177,7 +197,8 @@
 		75C3759A2B66607D00E5ABF1 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				75C375882B66507900E5ABF1 /* ContentView.swift */,
+				759560212B6D46C100763692 /* View */,
+				759560222B6D46C600763692 /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -334,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				75DB6BCC2B66B6860076F1DA /* RegistrationViewModel.swift */,
+				759560252B6D4A0300763692 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -437,10 +459,12 @@
 				75C375892B66507900E5ABF1 /* ContentView.swift in Sources */,
 				75DB6B542B6692000076F1DA /* ThreadCell.swift in Sources */,
 				75DB6B4E2B66909A0076F1DA /* ActivityView.swift in Sources */,
+				759560262B6D4A0300763692 /* LoginViewModel.swift in Sources */,
 				75DB6B592B6698A50076F1DA /* CircularProfileImageView.swift in Sources */,
 				75DB6B5B2B6699060076F1DA /* UserCell.swift in Sources */,
 				75DB6B4A2B66907C0076F1DA /* CreateThreadView.swift in Sources */,
 				75DB6B5E2B669FE50076F1DA /* ProfileThreadFilter.swift in Sources */,
+				759560242B6D46DC00763692 /* ContentViewModel.swift in Sources */,
 				75DB6B3E2B668C9B0076F1DA /* ThreadsTabView.swift in Sources */,
 				75C375872B66507900E5ABF1 /* ThreadsApp.swift in Sources */,
 				75DB6B3B2B668A970076F1DA /* ThreadsViewModifier.swift in Sources */,
