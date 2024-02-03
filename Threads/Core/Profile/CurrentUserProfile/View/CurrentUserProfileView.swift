@@ -10,13 +10,6 @@ import SwiftUI
 
 struct CurrentUserProfileView: View {
   @StateObject var viewModel = CurrentUserProfileViewModel()
-  @State private var selectedFilter: ProfileThreadFilter = .threads
-  @Namespace var animation
-  
-  private var filterBarWidth: CGFloat {
-    let count = CGFloat(ProfileThreadFilter.allCases.count)
-    return UIScreen.main.bounds.width / count - 16
-  }
   
   private var currentUser: User? {
     return viewModel.currentUser
@@ -25,79 +18,26 @@ struct CurrentUserProfileView: View {
   var body: some View {
     NavigationStack {
       ScrollView(showsIndicators: false) {
-        VStack(spacing: 24) {
-          HStack(alignment: .top) {
-            VStack(alignment: .leading, spacing: 12) {
-              VStack(alignment: .leading, spacing: 4) {
-                Text(currentUser?.fullname ?? "")
-                  .font(.title2)
-                  .fontWeight(.semibold)
-                
-                Text(currentUser?.username ?? "")
-                  .font(.subheadline)
-              }
-              
-              if let bio = currentUser?.bio {
-                Text(bio)
-                  .font(.footnote)
-              }
-              
-              Text("666 followers")
-                .font(.caption)
-                .foregroundStyle(Color(.gray))
-            }
-            
-            Spacer()
-            
-            CircularProfileImageView()
-          }
+        VStack(spacing: 20) {
+          ProfileHeaderView(user: currentUser)
           
           Button {
             
           } label: {
-            Text("Follow")
+            Text("Edit Profile")
               .font(.subheadline)
               .fontWeight(.semibold)
-              .foregroundStyle(Color(.white))
+              .foregroundStyle(Color(.black))
               .frame(width: 352, height: 32)
-              .background(.black)
+              .background(.white)
               .clipShape(RoundedRectangle(cornerRadius: 8))
+              .overlay {
+                RoundedRectangle(cornerRadius: 10)
+                  .stroke(Color(.systemGray4), lineWidth: 1)
+              }
           }
           
-          VStack {
-            HStack {
-              ForEach(ProfileThreadFilter.allCases) { filter in
-                VStack {
-                  Text(filter.title)
-                    .font(.subheadline)
-                    .fontWeight(selectedFilter == filter ? .semibold : .regular)
-                  
-                  if selectedFilter == filter {
-                    Rectangle()
-                      .foregroundStyle(Color(.black))
-                      .frame(width: filterBarWidth, height: 1)
-                      .matchedGeometryEffect(id: "item", in: animation)
-                  } else {
-                    Rectangle()
-                      .foregroundStyle(Color(.clear))
-                      .frame(width: filterBarWidth, height: 1)
-                  }
-                }
-                .onTapGesture {
-                  withAnimation(.spring()) {
-                    selectedFilter = filter
-                  }
-                }
-              }
-            }
-            
-            LazyVStack {
-              ForEach(0...10, id: \.self) { thread in
-                ThreadCell()
-              }
-            }
-          }
-          .padding(.vertical, 8)
+          UserContentListView()
         }
       }
       .toolbar {
