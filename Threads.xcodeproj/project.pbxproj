@@ -18,6 +18,10 @@
 		7595603E2B6E2A8900763692 /* UserContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595603D2B6E2A8900763692 /* UserContentListView.swift */; };
 		759560412B6E2F2200763692 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759560402B6E2F2200763692 /* EditProfileViewModel.swift */; };
 		759560432B6E324700763692 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759560422B6E324700763692 /* ImageUploader.swift */; };
+		759560462B6E382B00763692 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 759560452B6E382B00763692 /* Kingfisher */; };
+		759560482B6E9E0400763692 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759560472B6E9E0400763692 /* Thread.swift */; };
+		7595604D2B6E9EFA00763692 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595604C2B6E9EFA00763692 /* CreateThreadViewModel.swift */; };
+		7595604F2B6E9F1A00763692 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595604E2B6E9F1A00763692 /* ThreadService.swift */; };
 		75C375872B66507900E5ABF1 /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C375862B66507900E5ABF1 /* ThreadsApp.swift */; };
 		75C375892B66507900E5ABF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C375882B66507900E5ABF1 /* ContentView.swift */; };
 		75C3758E2B66507B00E5ABF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C3758D2B66507B00E5ABF1 /* Preview Assets.xcassets */; };
@@ -59,6 +63,9 @@
 		7595603D2B6E2A8900763692 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
 		759560402B6E2F2200763692 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		759560422B6E324700763692 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		759560472B6E9E0400763692 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		7595604C2B6E9EFA00763692 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
+		7595604E2B6E9F1A00763692 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		75C375832B66507900E5ABF1 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C375862B66507900E5ABF1 /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		75C375882B66507900E5ABF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 			files = (
 				75DB6BB72B66B4680076F1DA /* FirebaseFirestore in Frameworks */,
 				75DB6BBB2B66B4680076F1DA /* FirebaseFirestoreSwift in Frameworks */,
+				759560462B6E382B00763692 /* Kingfisher in Frameworks */,
 				75DB6B812B66B3C20076F1DA /* FirebaseFirestore in Frameworks */,
 				75DB6B752B66B3C20076F1DA /* FirebaseAuth in Frameworks */,
 				75DB6BAB2B66B4680076F1DA /* FirebaseAuth in Frameworks */,
@@ -162,6 +170,14 @@
 			isa = PBXGroup;
 			children = (
 				759560402B6E2F2200763692 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		759560492B6E9ED200763692 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7595604C2B6E9EFA00763692 /* CreateThreadViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -242,6 +258,7 @@
 			children = (
 				759560292B6D69A200763692 /* UserService.swift */,
 				759560422B6E324700763692 /* ImageUploader.swift */,
+				7595604E2B6E9F1A00763692 /* ThreadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -286,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				759560272B6D673600763692 /* User.swift */,
+				759560472B6E9E0400763692 /* Thread.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				75DB6B482B6690720076F1DA /* View */,
+				759560492B6E9ED200763692 /* ViewModel */,
 			);
 			path = ThreadCreation;
 			sourceTree = "<group>";
@@ -466,6 +485,7 @@
 				75DB6BAA2B66B4680076F1DA /* FirebaseAuth */,
 				75DB6BB62B66B4680076F1DA /* FirebaseFirestore */,
 				75DB6BBA2B66B4680076F1DA /* FirebaseFirestoreSwift */,
+				759560452B6E382B00763692 /* Kingfisher */,
 			);
 			productName = Threads;
 			productReference = 75C375832B66507900E5ABF1 /* Threads.app */;
@@ -498,6 +518,7 @@
 			mainGroup = 75C3757A2B66507900E5ABF1;
 			packageReferences = (
 				75DB6B672B66B3C20076F1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				759560442B6E382B00763692 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 75C375842B66507900E5ABF1 /* Products */;
 			projectDirPath = "";
@@ -527,6 +548,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DB6B422B668E090076F1DA /* FeedView.swift in Sources */,
+				7595604D2B6E9EFA00763692 /* CreateThreadViewModel.swift in Sources */,
+				759560482B6E9E0400763692 /* Thread.swift in Sources */,
 				75DB6BCD2B66B6860076F1DA /* RegistrationViewModel.swift in Sources */,
 				75C3759D2B6661AD00E5ABF1 /* LoginView.swift in Sources */,
 				75DB6BCF2B66B8030076F1DA /* AuthService.swift in Sources */,
@@ -547,6 +570,7 @@
 				75DB6B3E2B668C9B0076F1DA /* ThreadsTabView.swift in Sources */,
 				75C375872B66507900E5ABF1 /* ThreadsApp.swift in Sources */,
 				7595603C2B6E297600763692 /* ProfileHeaderView.swift in Sources */,
+				7595604F2B6E9F1A00763692 /* ThreadService.swift in Sources */,
 				75DB6B3B2B668A970076F1DA /* ThreadsViewModifier.swift in Sources */,
 				75DB6B462B6690350076F1DA /* ExploreView.swift in Sources */,
 				75DB6B522B6690B10076F1DA /* ProfileView.swift in Sources */,
@@ -768,6 +792,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		759560442B6E382B00763692 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
 		75DB6B672B66B3C20076F1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -779,6 +811,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		759560452B6E382B00763692 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 759560442B6E382B00763692 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		75DB6B742B66B3C20076F1DA /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 75DB6B672B66B3C20076F1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
