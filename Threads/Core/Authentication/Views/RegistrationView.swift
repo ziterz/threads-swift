@@ -27,7 +27,7 @@ struct RegistrationView: View {
           .autocapitalization(.none)
           .modifier(ThreadsTextFieldModifier())
         
-        SecureField("Enter your email", text: $viewModel.password)
+        SecureField("Enter your password", text: $viewModel.password)
           .modifier(ThreadsTextFieldModifier())
         
         TextField("Enter your full name", text: $viewModel.fullname)

@@ -1,22 +1,25 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  Threads
 //
-//  Created by Ziady Mubaraq on 28/01/24.
+//  Created by Ziady Mubaraq on 03/02/24.
 //  Copyright © 2024 ziterz.dev. All rights reserved.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-  let user: User
-  
+struct CurrentUserProfileView: View {
+  @StateObject var viewModel = CurrentUserProfileViewModel()
   @State private var selectedFilter: ProfileThreadFilter = .threads
   @Namespace var animation
   
   private var filterBarWidth: CGFloat {
     let count = CGFloat(ProfileThreadFilter.allCases.count)
     return UIScreen.main.bounds.width / count - 16
+  }
+  
+  private var currentUser: User? {
+    return viewModel.currentUser
   }
   
   var body: some View {
@@ -26,15 +29,15 @@ struct ProfileView: View {
           HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 12) {
               VStack(alignment: .leading, spacing: 4) {
-                Text(user.fullname)
+                Text(currentUser?.fullname ?? "")
                   .font(.title2)
                   .fontWeight(.semibold)
                 
-                Text(user.username)
+                Text(currentUser?.username ?? "")
                   .font(.subheadline)
               }
               
-              if let bio = user.bio {
+              if let bio = currentUser?.bio {
                 Text(bio)
                   .font(.footnote)
               }
@@ -112,6 +115,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-  let user = User(id: NSUUID().uuidString, fullname: "Ziady Mubaraq", email: "ziady.mubaraq@gmail.com", username: "ziterz")
-  return ProfileView(user: user)
+  CurrentUserProfileView()
 }
