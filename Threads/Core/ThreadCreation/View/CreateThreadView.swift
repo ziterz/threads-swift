@@ -21,10 +21,10 @@ struct CreateThreadView: View {
     NavigationStack {
       VStack {
         HStack(alignment: .top) {
-          CircularProfileImageView(user: nil, size: .small)
+          CircularProfileImageView(user: user, size: .small)
           
           VStack(alignment: .leading, spacing: 4) {
-            Text("ziterz")
+            Text(user?.username ?? "")
               .fontWeight(.semibold)
             
             TextField("Start a thread...", text: $caption, axis: .vertical)
