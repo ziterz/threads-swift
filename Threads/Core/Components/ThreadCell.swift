@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ThreadCell: View {
   let thread: Thread
@@ -14,17 +15,17 @@ struct ThreadCell: View {
   var body: some View {
     VStack {
       HStack(alignment: .top, spacing: 12) {
-        CircularProfileImageView(user: nil, size: .small)
+        CircularProfileImageView(user: thread.user, size: .small)
         
         VStack(alignment: .leading, spacing: 4) {
           HStack {
-            Text("ziterz")
+            Text(thread.user?.username ?? "")
               .font(.footnote)
               .fontWeight(.semibold)
             
             Spacer()
             
-            Text("10m")
+            Text(thread.timestamp.timestampString())
               .font(.caption)
               .foregroundStyle(Color(.systemGray3))
             
@@ -77,6 +78,6 @@ struct ThreadCell: View {
 }
 
 #Preview {
-  let thread = Thread(ownerUid: NSUUID().uuidString, caption: "Hello", timestamp: , likes: 0)
-  ThreadCell(thread: thread)
+  let thread = Thread(ownerUid: NSUUID().uuidString, caption: "Hello", timestamp: Timestamp(), likes: 0)
+  return ThreadCell(thread: thread)
 }

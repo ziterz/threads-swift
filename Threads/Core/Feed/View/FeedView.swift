@@ -17,12 +17,12 @@ struct FeedView: View {
       ScrollView(showsIndicators: false) {
         LazyVStack {
           ForEach(viewModel.threads) { thread in
-            ThreadCell()
+            ThreadCell(thread: thread)
           }
         }
       }
       .refreshable {
-        print("DEBUG: Refresh threads")
+        Task { try await viewModel.fetchThreads() }
       }
       .navigationTitle("Threads")
       .navigationBarTitleDisplayMode(.inline)
